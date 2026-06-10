@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Professional Portfolio of Isaac Othieno — Web Developer & UI/UX Designer">
+  <meta name="keywords" content="Portfolio, Web Developer, UI Designer, HTML, CSS, JavaScript">
+  <meta name="author" content="Isaac Othieno">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HAVEN | Isaac Othieno</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- LOADING SCREEN -->
+<div id="loader">
+  <div class="loader-inner">
+    <div class="loader-logo">HAVEN</div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+</div>
+
+<!-- CURSOR GLOW -->
+<div id="cursor-glow"></div>
+
+<!-- PARTICLES BACKGROUND -->
+<canvas id="particles-canvas"></canvas>
+
+<!-- DARK / LIGHT MODE TOGGLE -->
+<button id="theme-toggle" aria-label="Toggle theme">
+  <i class="fas fa-moon"></i>
+</button>
+
+<!--====================================
+  NAVIGATION
+=====================================-->
+<nav id="navbar">
+  <div class="navbar-inner">
+
+    <a href="#hero" class="logo">HAVEN</a>
+
+    <button class="toggle-btn" id="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero" class="nav-link"><span>Home</span></a></li>
+      <li><a href="#about" class="nav-link"><span>About</span></a></li>
+      <li><a href="#skills" class="nav-link"><span>Skills</span></a></li>
+      <li><a href="#projects" class="nav-link"><span>Projects</span></a></li>
+      <li><a href="#testimonials" class="nav-link"><span>Reviews</span></a></li>
+      <li><a href="#contacts" class="nav-link"><span>Contact</span></a></li>
+    </ul>
+
+  </div>
+</nav>
+
+<!--====================================
+  HERO SECTION
+=====================================-->
+<section id="hero">
+
+  <div class="hero-content">
+
+    <div class="hero-text" data-reveal>
+      <p class="hero-eyebrow">Available for freelance &amp; full-time</p>
+
+      <h1>
+        Hello, I'm<br>
+        <span class="gradient-text" id="typed-name">Isaac Othieno</span>
+      </h1>
+
+      <h2 class="hero-subtitle">
+        I build &nbsp;<span id="typed-role"></span><span class="typed-cursor">|</span>
+      </h2>
+
+      <p class="hero-desc">
+        Modern, responsive and user-friendly websites with clean interfaces
+        and smooth experiences. Turning ideas into digital solutions from Nairobi.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#contacts" class="btn-primary">
+          <span>Hire Me</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="#projects" class="btn-outline">View My Work</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-target="15">0</span><span>+</span>
+          <p>Projects</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="3">0</span><span>+</span>
+          <p>Years Exp.</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="10">0</span><span>+</span>
+          <p>Happy Clients</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-image" data-reveal>
+      <div class="image-ring ring-1"></div>
+      <div class="image-ring ring-2"></div>
+      <div class="image-blob">
+        <img src="/images/1000200848 (2).png" alt="Isaac Othieno">
+      </div>
+      <div class="floating-badge badge-1 glass">
+        <i class="fab fa-react"></i> React Dev
+      </div>
+      <div class="floating-badge badge-2 glass">
+        <i class="fas fa-star"></i> UI/UX
+      </div>
+    </div>
+
+  </div>
+
+  <a href="#about" class="scroll-down" aria-label="Scroll down">
+    <i class="fas fa-chevron-down"></i>
+  </a>
+
+</section>
+
+<!--====================================
+  ABOUT SECTION
+=====================================-->
+<section id="about">
+  <div class="container">
+
+    <div class="section-label" data-reveal>About Me</div>
+    <h2 class="section-title" data-reveal>The person behind the code</h2>
+
+    <div class="about-grid" data-reveal>
+
+      <div class="about-text">
+        <p>
+          I'm a passionate web developer dedicated to creating modern websites and
+          web applications. I enjoy learning new technologies and continuously
+          improving my skills in front-end and back-end development.
+        </p>
+        <p>
+          My goal is to build digital experiences that are beautiful, responsive,
+          accessible, and impactful — from Nairobi, for the world.
+        </p>
+        <div class="about-tags">
+          <span class="tag">Problem Solver</span>
+          <span class="tag">Clean Coder</span>
+          <span class="tag">UI Focused</span>
+          <span class="tag">Fast Learner</span>
+        </div>
+        <a href="#contacts" class="btn-primary mt-lg">
+          <span>Let's Talk</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="about-timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass">
+            <span class="timeline-year">2026</span>
+            <h4>Freelance Developer</h4>
+            <p>Building client projects across Africa and beyond.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass">
+            <span class="timeline-year">2024</span>
+            <h4>Full-Stack Development</h4>
+            <p>Expanded into Node.js, SQL and React ecosystems.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass">
+            <span class="timeline-year">2023</span>
+            <h4>Started Coding Journey</h4>
+            <p>Dove deep into HTML, CSS and JavaScript fundamentals.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!--====================================
+  SKILLS SECTION
+=====================================-->
+<section id="skills">
+  <div class="container">
+
+    <div class="section-label" data-reveal>What I Know</div>
+    <h2 class="section-title" data-reveal>My Skills</h2>
+
+    <div class="skills-grid" data-reveal>
+
+      <div class="skill-card glass">
+        <div class="skill-icon"><i class="fab fa-html5"></i></div>
+        <h3>HTML5</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+      </div>
+
+      <div class="skill-card glass">
+        <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+        <h3>CSS3</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+      </div>
+
+      <div class="skill-card glass">
+        <div class="skill-icon"><i class="fab fa-js"></i></div>
+        <h3>JavaScript</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+      </div>
+
+      <div class="skill-card glass">
+        <div class="skill-icon"><i class="fab fa-react"></i></div>
+        <h3>React</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+      </div>
+
+      <div class="skill-card glass">
+        <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+        <h3>Node.js</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+      </div>
+
+      <div class="skill-card glass">
+        <div class="skill-icon"><i class="fas fa-database"></i></div>
+        <h3>SQL</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!--====================================
+  PROJECTS SECTION
+=====================================-->
+<section id="projects">
+  <div class="container">
+
+    <div class="section-label" data-reveal>My Work</div>
+    <h2 class="section-title" data-reveal>Featured Projects</h2>
+
+    <div class="filter-tabs" data-reveal>
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web Apps</button>
+      <button class="filter-btn" data-filter="ui">UI/UX</button>
+      <button class="filter-btn" data-filter="ai">AI</button>
+    </div>
+
+    <div class="projects-grid" data-reveal>
+
+      <div class="project-card glass" data-category="web">
+        <div class="project-number">01</div>
+        <div class="project-tags">
+          <span class="ptag">React</span>
+          <span class="ptag">Node.js</span>
+          <span class="ptag">SQL</span>
+        </div>
+        <h3>Hotel Management System</h3>
+        <p>A modern hotel management platform featuring bookings, rooms, payments and customer management with a real-time dashboard.</p>
+        <div class="project-links">
+          <a href="#" class="plink"><i class="fab fa-github"></i> Code</a>
+          <a href="#" class="plink plink-accent"><i class="fas fa-external-link-alt"></i> Live</a>
+        </div>
+      </div>
+
+      <div class="project-card glass project-featured" data-category="ai">
+        <div class="project-number">02</div>
+        <div class="project-tags">
+          <span class="ptag">AI</span>
+          <span class="ptag">React</span>
+          <span class="ptag">Python</span>
+        </div>
+        <h3>AI Driven University Platform</h3>
+        <p>Smart university platform integrating AI for personalized learning paths, automated administration and intelligent analytics.</p>
+        <div class="project-links">
+          <a href="#" class="plink"><i class="fab fa-github"></i> Code</a>
+          <a href="#" class="plink plink-accent"><i class="fas fa-external-link-alt"></i> Live</a>
+        </div>
+      </div>
+
+      <div class="project-card glass" data-category="ui">
+        <div class="project-number">03</div>
+        <div class="project-tags">
+          <span class="ptag">HTML</span>
+          <span class="ptag">CSS</span>
+          <span class="ptag">JS</span>
+        </div>
+        <h3>Portfolio Website</h3>
+        <p>A responsive premium portfolio website showcasing projects, skills and achievements with Awwwards-level design.</p>
+        <div class="project-links">
+          <a href="#" class="plink"><i class="fab fa-github"></i> Code</a>
+          <a href="#" class="plink plink-accent"><i class="fas fa-external-link-alt"></i> Live</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!--====================================
+  TESTIMONIALS SECTION
+=====================================-->
+<section id="testimonials">
+  <div class="container">
+
+    <div class="section-label" data-reveal>What They Say</div>
+    <h2 class="section-title" data-reveal>Client Reviews</h2>
+
+    <div class="testimonials-grid" data-reveal>
+
+      <div class="testimonial-card glass">
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p>"Isaac is a talented developer who consistently delivers high-quality work on time. His attention to detail is remarkable."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">CA</div>
+          <div>
+            <h4>Client A</h4>
+            <span>Hotel Industry</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card glass">
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p>"Professional, creative and reliable. Working with Isaac was an amazing experience — delivered beyond expectations."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">CB</div>
+          <div>
+            <h4>Client B</h4>
+            <span>Education Sector</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card glass">
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p>"Exceptional UI work. Isaac transformed our outdated platform into something our users actually love to use every day."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">CC</div>
+          <div>
+            <h4>Client C</h4>
+            <span>Tech Startup</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!--====================================
+  CONTACT SECTION
+=====================================-->
+<section id="contacts">
+  <div class="container">
+
+    <div class="section-label" data-reveal>Get In Touch</div>
+    <h2 class="section-title" data-reveal>Contact Me</h2>
+
+    <div class="contact-grid" data-reveal>
+
+      <div class="contact-left">
+        <p class="contact-intro">
+          Feel free to reach out for collaborations, freelance projects or job opportunities. I typically respond within 24 hours.
+        </p>
+
+        <div class="contact-items">
+          <a href="mailto:hubmycode@gmail.com" class="contact-item glass">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <span>Email</span>
+              <p>hubmycode@gmail.com</p>
+            </div>
+          </a>
+          <a href="tel:+254712345678" class="contact-item glass">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <span>Phone</span>
+              <p>+254 712 345 678</p>
+            </div>
+          </a>
+          <div class="contact-item glass">
+            <div class="contact-icon"><i class="fas fa-location-dot"></i></div>
+            <div>
+              <span>Location</span>
+              <p>Nairobi, Kenya</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form glass" id="contact-form" onsubmit="handleFormSubmit(event)">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Isaac Othieno" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Project Collaboration">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary btn-full">
+          <span id="submit-text">Send Message</span>
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </form>
+
+    </div>
+
+  </div>
+</section>
+
+<!--====================================
+  FOOTER
+=====================================-->
+<footer>
+
+  <div class="footer-inner">
+
+    <div class="footer-logo">HAVEN</div>
+
+    <div class="social-media">
+      <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <p class="footer-text">&copy; 2026 HAVEN Portfolio · Built with passion in Nairobi</p>
+
+  </div>
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
